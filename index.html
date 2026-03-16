@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yug Khambholja — ECE Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">YK<span class="blink">_</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Awards</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon sun">☀</span>
+      <span class="theme-icon moon">◑</span>
+    </button>
+    <button class="nav-menu-btn" id="menuBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#achievements" class="mobile-link">Awards</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-lines"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="dot"></span>
+        ECE Undergrad · IoT · VLSI · AI/ML
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="line-wrap"><span class="line">Yug</span></span>
+        <span class="line-wrap"><span class="line">Khambholja</span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        Building at the intersection of <em>hardware</em> and <em>intelligence</em> —<br/>
+        from refractory brick lifespan prediction to RTL-to-GDSII silicon flows.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn-primary">Explore Work</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num">9.28</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">₹50K</span>
+          <span class="stat-label">Prize Won</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint reveal">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">A bit about <em>me</em></h2>
+          <p>
+            I'm a 4th-year B.Tech student in <strong>Electronics and Communication Engineering</strong>
+            at Pandit Deendayal Energy University, Gandhinagar, with a minor in IoT and a CGPA of
+            <strong>9.28/10</strong>.
+          </p>
+          <p>
+            My work spans the full stack of electronics — from designing silicon at the RTL-to-GDSII level
+            using Synopsys EDA tools, to deploying CNN-LSTM models in real industrial environments at
+            <strong>Reliance Industries</strong>.
+          </p>
+          <p>
+            I love solving problems where hardware meets software: embedded systems, IoT devices,
+            and applying deep learning to physical engineering challenges.
+          </p>
+          <div class="about-links">
+            <a href="mailto:yughk2005@gmail.com" class="pill-link">yughk2005@gmail.com</a>
+            <a href="https://linkedin.com/in/yug-kham" target="_blank" class="pill-link">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="about-card-wrap">
+          <div class="about-card">
+            <div class="card-row">
+              <span class="card-key">University</span>
+              <span class="card-val">PDEU, Gandhinagar</span>
+            </div>
+            <div class="card-row">
+              <span class="card-key">Degree</span>
+              <span class="card-val">B.Tech ECE · Minor IoT</span>
+            </div>
+            <div class="card-row">
+              <span class="card-key">Batch</span>
+              <span class="card-val">2023 – 2027</span>
+            </div>
+            <div class="card-row">
+              <span class="card-key">CGPA</span>
+              <span class="card-val highlight">9.28 / 10</span>
+            </div>
+            <div class="card-row">
+              <span class="card-key">Location</span>
+              <span class="card-val">Gandhinagar, Gujarat</span>
+            </div>
+            <div class="card-row">
+              <span class="card-key">Focus Areas</span>
+              <span class="card-val">Embedded · VLSI · AI/ML</span>
+            </div>
+          </div>
+          <div class="floating-badge badge-1">CNN-LSTM</div>
+          <div class="floating-badge badge-2">RTL→GDSII</div>
+          <div class="floating-badge badge-3">ESP32</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label">02 — Experience</div>
+      <h2 class="section-heading">Where I've <em>worked</em></h2>
+      <div class="exp-timeline">
+        <div class="exp-item">
+          <div class="exp-dot"></div>
+          <div class="exp-date">May – July 2025</div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h3>AI / ML Intern</h3>
+              <span class="exp-company">Reliance Industries Limited — JMD</span>
+            </div>
+            <ul class="exp-list">
+              <li>Built a <strong>CNN-LSTM model (PyTorch)</strong> to predict the lifespan of gasifier refractory bricks, achieving <strong>±7–10% prediction error</strong> — ~20% improvement over baseline.</li>
+              <li>Created a data pipeline using <strong>Python + SQL</strong>, merging real-time plant data (IP.21) and lab reports (LIMS), processing <strong>10,000+ records/day</strong>.</li>
+            </ul>
+            <div class="exp-tags">
+              <span>PyTorch</span><span>CNN-LSTM</span><span>Python</span><span>SQL</span><span>IP.21</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-heading">Selected <em>work</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card" data-index="01">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">Nov – Dec 2024</span>
+              <div class="project-tags">
+                <span>ESP32</span><span>IoT</span><span>Telegram API</span><span>HTTP</span>
+              </div>
+            </div>
+            <h3>IoT Smart Doorbell</h3>
+            <p>ESP32-based smart doorbell with I²C LCD display, buzzer feedback, and a Cam module for remote monitoring. Integrated <strong>IEEE 802.11 Wi-Fi</strong> and Telegram Bot API for text & image notifications with <strong>&lt;2s latency</strong>.</p>
+          </div>
+          <div class="project-hover-line"></div>
+        </div>
+
+        <div class="project-card featured" data-index="02">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">Aug – Sep 2025</span>
+              <div class="project-tags">
+                <span>ATmega2560</span><span>MAX30102</span><span>OLED</span><span>I²C</span>
+              </div>
+            </div>
+            <h3>Pulse Oximeter</h3>
+            <p>Real-time health monitoring system measuring heart rate (BPM) and blood oxygen (SpO₂) using ATmega2560 and MAX30102. Data displayed on a <strong>128×64 OLED</strong> via I²C, with buzzer alerts and counter-based reset logic.</p>
+          </div>
+          <div class="project-hover-line"></div>
+        </div>
+
+        <div class="project-card" data-index="03">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-date">May – Jun 2025</span>
+              <div class="project-tags">
+                <span>Verilog</span><span>Synopsys</span><span>VLSI</span><span>STA</span>
+              </div>
+            </div>
+            <h3>RTL-to-GDSII Flow</h3>
+            <p>110-sequence detector FSM in Verilog through full RTL-to-GDSII: synthesis (Design Compiler), floorplanning, placement, CTS, routing (ICC2), and STA (PrimeTime). Achieved <strong>+0.305 ns positive slack</strong> under 3.5 ns SDC constraints.</p>
+          </div>
+          <div class="project-hover-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">04 — Skills</div>
+      <h2 class="section-heading">My <em>toolbox</em></h2>
+      <div class="skills-layout">
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-pills">
+            <span>C</span><span>Python</span><span>Assembly</span><span>Verilog</span><span>Embedded C</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Tools & EDA</h4>
+          <div class="skill-pills">
+            <span>Proteus</span><span>MATLAB</span><span>Arduino IDE</span><span>Espressif IDE</span>
+            <span>Tinkercad</span><span>TINA-TI</span><span>Logisim</span><span>Design Compiler</span>
+            <span>ICC2</span><span>PrimeTime</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Protocols</h4>
+          <div class="skill-pills">
+            <span>SPI</span><span>UART</span><span>HTTP</span><span>I²C</span><span>IEEE 802.11</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group-title">Domains</h4>
+          <div class="skill-pills">
+            <span>Embedded Systems</span><span>IoT</span><span>VLSI Design</span>
+            <span>Deep Learning</span><span>Digital Logic</span><span>Computer Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-label">05 — Achievements</div>
+      <h2 class="section-heading">Recognition &amp; <em>training</em></h2>
+      <div class="ach-grid">
+        <div class="ach-card gold">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-content">
+            <span class="ach-org">GUJCOST</span>
+            <h3>Robofest 5.0</h3>
+            <p>Top 138 / 2096 teams, shortlisted for Proof of Concept round. Awarded <strong>₹50,000</strong>.</p>
+            <span class="ach-date">Dec 2025</span>
+          </div>
+        </div>
+        <div class="ach-card silver">
+          <div class="ach-icon">🥇</div>
+          <div class="ach-content">
+            <span class="ach-org">PDEU</span>
+            <h3>MECH-A-THON</h3>
+            <p>1st Prize (₹3,000) in college-wide Prototype Development Competition — CivicSense robot prototype.</p>
+            <span class="ach-date">Oct 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub-heading">Certificates</h3>
+      <div class="certs-list">
+        <div class="cert-item"><span class="cert-dot"></span><div><strong>STM32 Workshop</strong> — STMania · PDEU (2 Days)</div></div>
+        <div class="cert-item"><span class="cert-dot"></span><div><strong>Embedded Course</strong> — Embedded Software &amp; Hardware · Coursera</div></div>
+        <div class="cert-item"><span class="cert-dot"></span><div><strong>VLSI Basics Workshop</strong> — PDEU (3 Days)</div></div>
+        <div class="cert-item"><span class="cert-dot"></span><div><strong>RTL2GDSII Workshop</strong> — VLSIExpert · PDEU (10 Days)</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">06 — Contact</div>
+      <h2 class="section-heading">Let's <em>connect</em></h2>
+      <p class="contact-sub">Open to internships, research collabs, and interesting projects in embedded systems, VLSI, and AI/ML.</p>
+      <div class="contact-links">
+        <a href="mailto:yughk2005@gmail.com" class="contact-btn">
+          <span class="contact-icon">✉</span>
+          <span>yughk2005@gmail.com</span>
+        </a>
+        <a href="tel:+919106291036" class="contact-btn">
+          <span class="contact-icon">✆</span>
+          <span>+91 9106291036</span>
+        </a>
+        <a href="https://linkedin.com/in/yug-kham" target="_blank" class="contact-btn">
+          <span class="contact-icon">in</span>
+          <span>linkedin.com/in/yug-kham</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span>Designed &amp; built by <strong>Yug Khambholja</strong></span>
+      <span class="footer-right">Gandhinagar, Gujarat · 2025</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
