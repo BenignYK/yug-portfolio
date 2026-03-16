@@ -191,7 +191,7 @@ em { font-family: var(--ff-serif); font-style: italic; }
   50% { filter: blur(100px) scale(1.12); }
 }
 
-.hero-inner { max-width: 800px; text-align: center; position: relative; z-index: 1; }
+.hero-inner { max-width: 800px; text-align: center; position: relative; z-index: 1; width: 100%; overflow: hidden; }
 
 .hero-chip {
   display: inline-flex; align-items: center; gap: 9px;
@@ -211,11 +211,14 @@ em { font-family: var(--ff-serif); font-style: italic; }
 }
 
 .hero-name {
-  font-size: clamp(3.6rem, 9.5vw, 8.5rem);
-  font-weight: 800; line-height: 0.9; letter-spacing: -0.045em;
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-weight: 800; line-height: 0.95; letter-spacing: -0.04em;
   margin-bottom: 30px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
-.name-line { display: block; overflow: hidden; }
+.name-line { display: block; overflow: hidden; max-width: 100%; }
 .name-inner {
   display: block; transform: translateY(110%);
   animation: slideUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -466,7 +469,7 @@ em { font-family: var(--ff-serif); font-style: italic; }
   .stat-div { display: none; }
 }
 @media (max-width: 480px) {
-  .hero-name { font-size: clamp(2.8rem, 12vw, 4.2rem); }
+  .hero-name { font-size: clamp(2.2rem, 10vw, 3.2rem); }
   .sec-title { font-size: 1.75rem; }
 }
 </style>
