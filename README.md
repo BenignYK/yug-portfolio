@@ -4,7 +4,7 @@ Personal digital portfolio for Yug Hiteshkumar Khambholja, B.Tech ECE student at
 
 ## 🚀 Live Site
 
-Deployed via GitHub Pages: `https://<your-username>.github.io/yug-portfolio/`
+Deployed via GitHub Pages: `https://BenignYK.github.io/yug-portfolio/`
 
 ---
 
